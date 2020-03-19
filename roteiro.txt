@@ -1,0 +1,20 @@
+create project adonis
+adonis new BackEndAirBnbClone --api-only
+adonis serve --dev
+
+
+add dependência do mariaDB
+npm install mysql
+
+
+adonis migration:run
+controle de usuarios
+adonis make:controller User --type http
+
+criar sessão 
+adonis make:controller Session --type http
+
+Para iniciar vamos criar nosso model, migration e controller executando o comando:
+adonis make:model Property -m -c
+
+Upload de imagens no AdonisJS parei
